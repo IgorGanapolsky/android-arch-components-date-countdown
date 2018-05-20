@@ -3,9 +3,7 @@ package za.co.riggaroo.datecountdown;
 
 import android.app.Activity;
 import android.app.Application;
-import android.util.Log;
 
-import com.amitshekhar.DebugDB;
 import com.jakewharton.threetenabp.AndroidThreeTen;
 
 import javax.inject.Inject;
@@ -30,9 +28,6 @@ public class CountdownApplication extends Application implements HasActivityInje
             Timber.plant(new Timber.DebugTree());//TODO Install a Crashlytics tree in production
         }
         AppInjector.init(this);
-
-        Log.d(CountdownApplication.class.getCanonicalName(), "db debug addr: " + DebugDB.getAddressLog());
-
     }
 
     @Override
