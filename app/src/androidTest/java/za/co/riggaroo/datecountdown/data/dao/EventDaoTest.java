@@ -6,6 +6,7 @@ import android.arch.persistence.room.Room;
 import android.support.annotation.Nullable;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,12 +26,9 @@ import static junit.framework.Assert.assertEquals;
  * @since 2017/04/21.
  */
 @RunWith(AndroidJUnit4.class)
-public class EventDaoTest  {
-
-    EventDao eventDao;
-
-
-    EventDatabase eventDatabase;
+public class EventDaoTest {
+    private EventDao eventDao;
+    private EventDatabase eventDatabase;
 
     @Before
     public void setup() {
